@@ -17,6 +17,6 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.dumbdumb, name='dumby'),
+    url(r'^$', views.dumbdumb, name='dummy'),
     url(r'sso/oauth2.0/accessToken$', views.login, name='login'),
 ]
