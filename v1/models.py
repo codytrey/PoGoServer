@@ -12,11 +12,22 @@ class Player(models.Model):
     max_item_storage = models.IntegerField
     remaining_codename_claims = models.IntegerField
 
+class BuddyPokemon(models.Model):
+    Player = models.ForeignKey(Player, on_delete=models.CASCADE)
+    id = models.BigIntegerField
+    start_km_walked = models.FloatField
+    last_km_awarded = models.FloatField
+
+class Currency(models.Model):
+    Player = models.ForeignKey(Player, on_delete=models.CASCADE)
+    name = models.CharField
+    amount = models.IntegerField
+
 class EquippedBadge(models.Model):
     Player = models.ForeignKey(Player, on_delete=models.CASCADE)
     level = models.IntegerField
     next_equip_change_allowed_timestamp_ms = models.BigIntegerField
-
+    equipped_badge = models.TextField
 
 class DailyBonus(models.Model):
     Player = models.ForeignKey(Player, on_delete=models.CASCADE)
