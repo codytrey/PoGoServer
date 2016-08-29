@@ -18,5 +18,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.dumbdumb, name='dumby'),
-    url(r'login$', views.login, name='login'),
+    url(r'sso/oauth2.0/accessToken$', views.login, name='login'),
 ]
