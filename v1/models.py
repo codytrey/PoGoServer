@@ -6,6 +6,7 @@ from django.db import models
 class Player(models.Model):
     creation_timestamp_ms = models.BigIntegerField
     username = models.CharField(max_length=40)
+    password = models.CharField(max_length=40)
     team = models.IntegerField
     tutorial_state = models.IntegerField
     max_pokemon_storage = models.IntegerField
