@@ -18,5 +18,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.dumbdumb, name='dummy'),
-    url(r'plfe/rpc', views.rpc, name='rpc'),
+    url(r'plfe/rpc$', views.rpc, name='rpc'),
+    url(r'plfe/(\d+)/rpc$', views.rpc, name='rpc'),
 ]
