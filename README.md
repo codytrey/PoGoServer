@@ -1,6 +1,6 @@
 # PoGoSever
 
-The PoGoServer project, or Pokemon Go Server, is an effort reverse engineer the backend pokemon go game servers and make our own that will work seamilessly (hopefully) with the Officaly app, and 3rd party clients alike with a long term goal of extending the functionalaity of the game.
+The PoGoServer project, or Pokemon Go Server, is an effort reverse engineer the backend pokemon go game servers and make our own that will work seamilessly (hopefully) with the Offical app, and 3rd party clients alike with a long term goal of extending the functionalaity of the game.
 
 The idea started as an experiment to see what was possible, but with the service instablility and exessive banning we quickly said:
 > "I'm going to build my own pokemon go server, with black jack, and hookers"
