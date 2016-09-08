@@ -18,5 +18,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.dumbdumb, name='dummy'),
-    url(r'sso/oauth2.0/accessToken$', views.login, name='login'),
+    url(r'plfe/rpc', views.rpc, name='rpc'),
 ]

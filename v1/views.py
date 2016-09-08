@@ -11,7 +11,7 @@ from POGOProtos.Networking.Requests import Messages_pb2
 from google.protobuf import message
 
 # Create your views here.
-def login(request):
+def rpc(request):
     mesg = Request.FromString(request.body)
 
     assert isinstance(mesg, Request)
